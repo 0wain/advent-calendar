@@ -5,6 +5,7 @@ This is a simple/lazy standalone port of [The XYZ Network's advent calendar](htt
 - It should just be drag and drop, the default config rewards have some DarkRP dependencies, but the system does not require DarkRP to function.
 - If you don't include all 25 days in the door order, wacky things might happen.
 - Don't expect much, this is just a simple port.
+- When the server starts, it sets whatever day it is in the server's local timezone as the current door for the rest of the server session. So for example: if you restart your server at 11pm, the door will remain whatever day it was at the point of the restart even into the next day. I have no intentions of accounting for this.
 
 ## Preview
 ![image](https://github.com/owainjones74/advent-calendar/blob/master/preview.jpg)
