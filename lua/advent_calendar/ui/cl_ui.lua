@@ -59,18 +59,10 @@ function AdventCalendar.Core.UI()
 			if AdventCalendar.OpenedDoors[i] then
 				--Door is open
 				draw.RoundedBox(0, 5, 5, w-10, h-10, grey)
-				if i == AdventCalendar.CurrentDay then
-					draw.RoundedBox(0, w-15, 5, 10, h-10, gold)
-				else
-					draw.RoundedBox(0, w-15, 5, 10, h-10, pink)
-				end
+				draw.RoundedBox(0, w-15, 5, 10, h-10, (i == AdventCalendar.CurrentDay) and gold or pink)
 			else
 				--Door is closed
-				if i == AdventCalendar.CurrentDay then
-					draw.RoundedBox(0, 5, 5, w-10, h-10, gold)
-				else
-					draw.RoundedBox(0, 5, 5, w-10, h-10,pink)
-				end
+				draw.RoundedBox(0, 5, 5, w-10, h-10, (i == AdventCalendar.CurrentDay) and gold or pink)
 				draw.RoundedBox(0, 10, h/2-20, 15, 40, ligheterGrey)
 			end
 
