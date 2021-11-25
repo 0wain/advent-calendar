@@ -2,6 +2,8 @@
 net.Receive("AdventCalendar:CurrentDay", function()
 	AdventCalendar.CurrentDay = net.ReadInt(32)
 	AdventCalendar.OpenedDoors = net.ReadTable()
+
+	AdventCalendar.Core.UI()
 end)
 
 

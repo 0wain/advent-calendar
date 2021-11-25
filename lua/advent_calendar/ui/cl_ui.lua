@@ -1,8 +1,3 @@
-hook.Add("HUDPaint", "AdventCalendar:ShowOnJoin", function()
-	AdventCalendar.Core.UI()
-	hook.Remove("HUDPaint", "AdventCalendar:ShowOnJoin")
-end)
-
 local basicallyBlack = Color(10, 10, 10)
 local grey = Color(40, 40, 40)
 local ligheterGrey = Color(80, 80, 80)
