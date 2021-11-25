@@ -15,7 +15,7 @@ hook.Add("PlayerInitialSpawn", "AdventCalendar:NetworkCurrentDay", function(ply)
 
 	AdventCalendar.Core.GetOpenedDoors(ply, function(data)
 		for k, v in pairs(data or {}) do
-			AdventCalendar.OpenedDoors[ply:SteamID64()][v.door] = true
+			AdventCalendar.OpenedDoors[ply:SteamID64()][tonumber(v.door)] = true
 		end
 
 		net.Start("AdventCalendar:CurrentDay")
